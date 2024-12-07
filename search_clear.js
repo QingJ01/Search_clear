@@ -328,11 +328,10 @@
             
             // 需要移除的查询参数
             const qs = [
-                // 百度参数
-                'rsp','prefixsug','fr','bsst','f','inputT','usm','rsv_page','rqlang',
-                'rsv_t','oq','rsv_pq','rsv_spt','ie','rsv_enter','rsv_sug1','rsv_sug7',
-                'rsv_sug2','rsv_sug3','rsv_iqid','rsv_bp','rsv_btype','rsv_idx',
-                'rsv_dl','issp','cshid','tn','rsv_sug4',
+                // 百度参数 - 只保留必要参数
+                'prefixsug', 'bsst', 'inputT', 'usm', 
+                'rsv_sug1', 'rsv_sug7', 'rsv_sug2', 'rsv_sug3', 'rsv_sug4',
+                'issp', 'cshid',
                 
                 // 谷歌参数
                 'tbas','ved','uact','ei','ie','oq','sclient','cshid','dpr','iflsig',
@@ -343,6 +342,11 @@
                 'tsc','sp','FORM','form','pq','sc','qs','sk','cvid','lq','ghsh',
                 'ghacc','ghpl','ghc'
             ];
+
+            // 移除以下参数可能会影响移动端功能，所以在移动端时跳过
+            if(location.host.includes('m.baidu.com')) {
+                return false;
+            }
 
             // 需要在特定值时移除的参数
             const qseq = [['start', '0']];
