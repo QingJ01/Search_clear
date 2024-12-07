@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Stars](https://img.shields.io/github/stars/QingJ01/Search_clear?style=flat-squar)
-[![GreasyFork](https://img.shields.io/badge/GreasyFork-安装-red.svg)](安装链接)
+[![GreasyFork](https://img.shields.io/badge/GreasyFork-安装-blue.svg)](安装链接)
 
 一个轻量级的搜索引擎优化脚本,让你的搜索体验更加纯净流畅。
 
