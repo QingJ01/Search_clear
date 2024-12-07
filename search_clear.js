@@ -177,7 +177,7 @@
                     .c-result-content:has([class*="advertise"]) {
                         display: none !important;
                     }
-               );
+                `);
             }
         }
 
