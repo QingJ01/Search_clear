@@ -67,7 +67,7 @@
   - [Greasemonkey](https://www.greasespot.net/)
 
 ### 安装步骤
-1. [点击此处](安装链接)安装脚本
+1. [点击此处](https://greasyfork.org/zh-CN/scripts/520018-%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E5%87%80%E5%8C%96)安装脚本
 2. 在脚本管理器中启用脚本
 3. 访问支持的搜索引擎即可自动启用优化
 
