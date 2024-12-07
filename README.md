@@ -8,8 +8,7 @@
     <img src="https://img.shields.io/github/forks/QingJ01/Search_clear?style=flat-square" alt="forks">
     <img src="https://img.shields.io/github/issues/QingJ01/Search_clear?style=flat-square" alt="issues">
     <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square" alt="license">
-    <img src="https://img.shields.io/badge/GreasyFork-安装-blue.svg?style=flat-square" alt="greasyfork">
-    <br>
+    </br>
     <b>一个轻量级的搜索引擎优化脚本,让你的搜索体验更加纯净流畅。</b>
 </div>
 
