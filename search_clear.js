@@ -95,9 +95,19 @@
             // 移除手机版广告
             if(location.host.includes('m.baidu.com')) {
                 removeElements([
-                    '#page-bd div:not(.result)',
-                    '#page-bd div:not([class])',
-                    '.na-like-container'
+                    '.ec_wise_ad',
+                    '.ec-result-inner',
+                    '.c-result.result-op',
+                    // 移除顶部推广
+                    '.c-container:has(.c-icons-outer:contains("广告"))',
+                    '.c-container:has([data-tuiguang])',
+                    // 移除底部推荐
+                    '.na-like-container',
+                    // 移除下载提示
+                    '.download-tip',
+                    // 移除浮动按钮
+                    '.float-ball',
+                    '.ball-wrapper'
                 ].join(','));
             }
         }
