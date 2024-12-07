@@ -35,22 +35,22 @@
 ## 🌍 支持范围
 
 ### 搜索引擎
-- [x] 百度搜索 (www.baidu.com)
+- ✅ 百度搜索 (www.baidu.com)
   - PC端搜索页面
   - 移动端搜索页面
   - 百度学术
   
-- [x] 谷歌搜索 (www.google.com)
+- ✅ 谷歌搜索 (www.google.com)
   - 搜索结果页
   - 图片搜索页
   
-- [x] 必应搜索 (www.bing.com)
+- ✅ 必应搜索 (www.bing.com)
   - 国际版
   - 中国版
   
-- [x] 搜狗搜索 (www.sogou.com)
-- [x] 360搜索 (www.so.com)
-- [x] 神马搜索 (m.sm.cn)
+- ✅ 搜狗搜索 (www.sogou.com)
+- ✅ 360搜索 (www.so.com)
+- ✅ 神马搜索 (m.sm.cn)
 
 ### 平台适配
 - ✅ Windows / macOS / Linux
