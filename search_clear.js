@@ -95,20 +95,89 @@
             // 移除手机版广告
             if(location.host.includes('m.baidu.com')) {
                 removeElements([
+                    // 广告容器
                     '.ec_wise_ad',
                     '.ec-result-inner',
                     '.c-result.result-op',
-                    // 移除顶部推广
+                    '[data-module="b2b"]',
+                    
+                    // 推广内容
                     '.c-container:has(.c-icons-outer:contains("广告"))',
                     '.c-container:has([data-tuiguang])',
-                    // 移除底部推荐
+                    '.c-container:has(.icon-marketing)',
+                    '.c-container:has(.c-icon-marketing)',
+                    '.c-container:has([class*="tuiguang"])',
+                    '.c-container:has([class*="marketing"])',
+                    '.c-container:has(.source:contains("广告"))',
+                    '.c-container:has(.c-color-source:contains("广告"))',
+                    
+                    // 商业广告
+                    '[data-tcelog]',
+                    '[data-click*="ad"]',
+                    '[data-log*="ad"]',
+                    '[data-resourceid*="ad"]',
+                    '[data-type="ads"]',
+                    '[data-rendered="ad"]',
+                    '[class*="_ad_"]',
+                    '[id*="_ad_"]',
+                    
+                    // 应用推广
+                    '.c-result.c-clk-recommend',
+                    '.c-recomm-wrap',
+                    '.c-recommend-wrap',
+                    '.recommend-wrap',
+                    '[class*="recommend-list"]',
+                    
+                    // 底部推荐和下载
                     '.na-like-container',
-                    // 移除下载提示
                     '.download-tip',
-                    // 移除浮动按钮
+                    '.app-download',
+                    '[class*="download-wrap"]',
+                    
+                    // 浮动元素
                     '.float-ball',
-                    '.ball-wrapper'
+                    '.ball-wrapper',
+                    '.new-user-banner',
+                    '.search-guide-layer',
+                    
+                    // 特定广告位
+                    '#page-copyright[style*="margin-bottom"]',
+                    '.search-feedback-wrapper',
+                    '.wise-custom-wrap',
+                    '.brand-entry',
+                    
+                    // 其他广告
+                    '.ec-pl-container',
+                    '.ec-pc-container', 
+                    '.c-container.ec-container',
+                    '.c-container.sfc-container',
+                    '.c-container.ad-container',
+                    '.c-container.ec-result',
+                    '.c-container.ecom-result',
+                    '.c-container.sfc-result',
+                    '.c-container.biz-result',
+                    '.c-container.adv-result',
+                    '.c-container.ecom-adv',
+                    '.c-container.sfc-adv',
+                    '.c-container.biz-adv'
                 ].join(','));
+                
+                // 添加CSS规则
+                GM_addStyle(`
+                    .search-guide,
+                    .popup-layer,
+                    .c-atom-afterclick,
+                    [class*="ad-wrapper"],
+                    [class*="ad-banner"],
+                    .c-result-content:has(.c-icon-ads),
+                    .c-result-content:has(.c-icon-marketing),
+                    .c-result-content:has(.c-icon-sponsored),
+                    .c-result-content:has([data-tuiguang]),
+                    .c-result-content:has([class*="promote"]),
+                    .c-result-content:has([class*="advertise"]) {
+                        display: none !important;
+                    }
+               );
             }
         }
 
@@ -138,14 +207,6 @@
                 'li.b_ad',
                 '.ad_sc'
             ].join(','));
-
-            // 处理特殊广告标记
-            const resList = [...document.querySelectorAll("ol>li")].filter(one => one.querySelector('p'));
-            resList.filter(one => 
-                window.getComputedStyle(one.querySelector('p'), '::before')
-                     .getPropertyValue('content')
-                     .includes('url')
-            ).forEach(ad => ad.remove());
         }
 
         // 搜狗广告过滤
@@ -441,4 +502,4 @@
         init();
     }
 
-})();
+})(); `
