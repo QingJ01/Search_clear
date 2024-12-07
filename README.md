@@ -1,7 +1,8 @@
 # 搜索引擎净化
 
 <div align="center">
-
+    <img src="https://raw.gitmirror.com/QingJ01/Search_clear/refs/heads/main/icon.ico" width="128px" style="border-radius: 10px"/>
+  
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 ![Stars](https://img.shields.io/github/stars/QingJ01/Search_clear?style=flat-squar)
