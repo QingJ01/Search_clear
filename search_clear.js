@@ -101,15 +101,15 @@
                     '.c-result.result-op',
                     '[data-module="b2b"]',
                     
-                    // 推广内容
-                    '.c-container:has(.c-icons-outer:contains("广告"))',
-                    '.c-container:has([data-tuiguang])',
-                    '.c-container:has(.icon-marketing)',
-                    '.c-container:has(.c-icon-marketing)',
-                    '.c-container:has([class*="tuiguang"])',
-                    '.c-container:has([class*="marketing"])',
-                    '.c-container:has(.source:contains("广告"))',
-                    '.c-container:has(.c-color-source:contains("广告"))',
+                    // 推广内容 - 修改选择器写法
+                    '.c-container .c-icons-outer:contains("广告")',
+                    '.c-container [data-tuiguang]',
+                    '.c-container .icon-marketing',
+                    '.c-container .c-icon-marketing',
+                    '.c-container [class*="tuiguang"]',
+                    '.c-container [class*="marketing"]',
+                    '.c-container .source:contains("广告")',
+                    '.c-container .c-color-source:contains("广告")',
                     
                     // 商业广告
                     '[data-tcelog]',
@@ -169,12 +169,12 @@
                     .c-atom-afterclick,
                     [class*="ad-wrapper"],
                     [class*="ad-banner"],
-                    .c-result-content:has(.c-icon-ads),
-                    .c-result-content:has(.c-icon-marketing),
-                    .c-result-content:has(.c-icon-sponsored),
-                    .c-result-content:has([data-tuiguang]),
-                    .c-result-content:has([class*="promote"]),
-                    .c-result-content:has([class*="advertise"]) {
+                    .c-result-content .c-icon-ads,
+                    .c-result-content .c-icon-marketing,
+                    .c-result-content .c-icon-sponsored,
+                    .c-result-content [data-tuiguang],
+                    .c-result-content [class*="promote"],
+                    .c-result-content [class*="advertise"] {
                         display: none !important;
                     }
                 `);
