@@ -2,16 +2,15 @@
 
 <div align="center">
     <img src="https://raw.gitmirror.com/QingJ01/Search_clear/refs/heads/main/icon.ico" width="128px" style="border-radius: 10px"/>
-  
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![Stars](https://img.shields.io/github/stars/QingJ01/Search_clear?style=flat-squar)
-[![GreasyFork](https://img.shields.io/badge/GreasyFork-安装-blue.svg)](安装链接)
-
-一个轻量级的搜索引擎优化脚本,让你的搜索体验更加纯净流畅。
-
-[GitHub](https://github.com/QingJ01/Search_clear) | [问题反馈](https://github.com/QingJ01/Search_clear/issues) | [功能建议](https://github.com/QingJ01/Search_clear/issues) | [QQ交流群](https://qm.qq.com/cgi-bin/qm/qr?k=7j_1SXC6SUlOKqHfqVk2YMPrWSdf5Js7&jump_from=webapi&authKey=ih1vlkxMeQc9CxE18GjR2WN0x85OQoP7jB78/3UzeJ4hvXw3+eSUNeRMjHjS24lT)
-
+    <br>
+    <img src="https://img.shields.io/badge/version-1.0.0-blue?style=flat-square" alt="version">
+    <img src="https://img.shields.io/github/stars/QingJ01/Search_clear?style=flat-square" alt="stars">
+    <img src="https://img.shields.io/github/forks/QingJ01/Search_clear?style=flat-square" alt="forks">
+    <img src="https://img.shields.io/github/issues/QingJ01/Search_clear?style=flat-square" alt="issues">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square" alt="license">
+    <img src="https://img.shields.io/badge/GreasyFork-安装-blue.svg?style=flat-square" alt="greasyfork">
+    <br>
+    <b>一个轻量级的搜索引擎优化脚本,让你的搜索体验更加纯净流畅。</b>
 </div>
 
 ## 🌟 功能特性
