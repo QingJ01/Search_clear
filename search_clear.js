@@ -742,7 +742,7 @@
 
                         html += `
                             <div style='margin-bottom:10px;margin-top:5px;font-size:12px;'>
-                                <a target='_blank' href='https://greasyfork.org/zh-CN/scripts/418804'>*该数据由油猴脚本提供</a>
+                                <a target='_blank' href='https://greasyfork.org/zh-CN/scripts/520018'>*该数据由 搜索引擎净化 提供</a>
                                 &nbsp;&nbsp;
                                 <a href="javascript:void(0);" name="customNavigation">自定义网址</a>
                             </div>
